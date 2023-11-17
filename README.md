@@ -6,7 +6,6 @@
 - [Steps Used](#steps-used)
 - [Chosen Features](#chosen-features)
 - [Model Architecture](#model-architecture)
-- [Deployment](#deployment)
 - [Demo Video](#demo-video)
 <!--toc:end-->
 
@@ -70,10 +69,6 @@ Customer churn is a significant problem and one of the most essential concerns f
 ## Model Architecture
 
 **N.B.** Grid search and cross-validation were used to find the best hyperparameters, while the RMSprop optimizer was used 
-
-## Deployment
-
-- Website link: []()
 
 ## Demo Video
 
