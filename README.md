@@ -71,24 +71,6 @@ Customer churn is a significant problem and one of the most essential concerns f
 
 **N.B.** Grid search and cross-validation were used to find the best hyperparameters, while the RMSprop optimizer was used 
 
-### Initial Model
-
-Creating a deep neural network.
-
-```python
-#Keras Functional API
-input_layer = Input(shape=(X_train.shape[1],))
-hidden_layer_1 = Dense(64, activation='relu')(input_layer)
-hidden_layer_2 = Dropout(0.25)
-hidden_layer_3 = Dense(32, activation='relu')(hidden_layer_1)
-hidden_layer_4 = Dropout(0.3)
-output_layer = Dense(1, activation='sigmoid')(hidden_layer_3)
-
-model = Model(inputs=input_layer, outputs=output_layer)
-
-model.compile(optimizer=RMSprop(learning_rate=0.0001), loss='binary_crossentropy', metrics=['accuracy'])
-```
-
 ## Deployment
 
 - Website link: []()
